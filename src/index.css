@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+@import "tailwindcss";
+@plugin "daisyui";
+
+* {
+  font-family: "Manrope", sans-serif;
+}
+
+.linear-gr-bg {
+  background: linear-gradient(
+    to right,
+    rgba(79, 57, 246, 1),
+    rgba(149, 20, 250, 1)
+  );
+}
+
+.linear-gr-bg-logo {
+  background: linear-gradient(
+    to right,
+    rgba(79, 57, 246, 1),
+    rgba(149, 20, 250, 1)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+}
