@@ -4,6 +4,8 @@ import Stats from "./components/Statas/Stats";
 import NavBar from "./components/NavBar/NavBar";
 import Tabs from "./components/Tabs/Tabs";
 import Products from "./components/Products/Products";
+import { useState } from "react";
+import Cart from "./components/Cart/Cart";
 
 const productData = async () => {
   const res = await fetch("/products.json");
@@ -13,13 +15,19 @@ const productData = async () => {
 const dataPromise = productData();
 
 function App() {
+  const [activeTab, setActiveTab] = useState("products");
+  const [cart, setCart] = useState([]);
+
   return (
     <>
       <NavBar></NavBar>
       <Banner></Banner>
       <Stats></Stats>
-      <Tabs></Tabs>
-      <Products dataPromise={dataPromise}></Products>
+      <Tabs activeTab={activeTab} setActiveTab={setActiveTab} cart={cart}></Tabs>
+      {activeTab === "products" && (
+        <Products dataPromise={dataPromise} cart={cart} setCart={setCart}></Products>
+      )}
+      {activeTab === "cart" && <Cart></Cart>}
     </>
   );
 }

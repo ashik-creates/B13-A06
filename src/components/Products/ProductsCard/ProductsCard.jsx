@@ -1,6 +1,19 @@
+import { useState } from "react";
 import { MdCheck } from "react-icons/md";
+import { toast } from "react-toastify";
 
-const ProductsCard = ({ product }) => {
+const ProductsCard = ({ product, cart, setCart }) => {
+  const [isSelected, setIsSelected] = useState(false);
+  const handleSelected = (selectedProduct) => {
+    const isInCart = cart.find((p) => p.id === selectedProduct.id);
+    if(isInCart){
+      toast.warning("Product is already in Cart")
+      return;
+    }
+    setCart([...cart, selectedProduct])
+    setIsSelected(true);
+    toast.success("Product is added to Cart")
+  };
   return (
     <div className="relative">
       <div className="p-5 shadow-lg rounded-lg border border-gray-300 flex flex-col gap-6 h-full">
@@ -24,19 +37,26 @@ const ProductsCard = ({ product }) => {
                 <span className="text-green-500">
                   <MdCheck></MdCheck>
                 </span>
-                <span className="text-gray-500">
-                  {item}
-                </span>
+                <span className="text-gray-500">{item}</span>
               </p>
             ))}
           </div>
         </div>
-        <button className="btn linear-gr-bg w-full rounded-full text-white font-bold">
-          Buy Now
+        <button
+          onClick={() => handleSelected(product)}
+          className={`btn ${isSelected ? "bg-green-500" : "linear-gr-bg"} w-full rounded-full text-white font-bold duration-200`}
+        >
+          {isSelected ? "Added to Cart" : "Buy Now"}
         </button>
       </div>
-      <div className="absolute badge bg-amber-300 top-2 right-2 rounded-full">
-        Popular
+      <div
+        className={`absolute badge ${
+          product.tagType === "best seller" && "bg-amber-200 text-amber-600"
+        } ${product.tagType === "popular" && "bg-purple-200 text-purple-600"} ${
+          product.tagType === "new" && "bg-green-200 text-green-600"
+        } top-2 right-2 rounded-full`}
+      >
+        {product.tag}
       </div>
     </div>
   );
