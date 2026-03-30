@@ -6,6 +6,7 @@ import Tabs from "./components/Tabs/Tabs";
 import Products from "./components/Products/Products";
 import { useState } from "react";
 import Cart from "./components/Cart/Cart";
+import Steps from "./components/Steps/Steps";
 
 const productData = async () => {
   const res = await fetch("/products.json");
@@ -28,6 +29,7 @@ function App() {
         <Products dataPromise={dataPromise} cart={cart} setCart={setCart}></Products>
       )}
       {activeTab === "cart" && <Cart cart={cart} setCart={setCart}></Cart>}
+      <Steps></Steps>
     </>
   );
 }
