@@ -20,7 +20,7 @@ function App() {
 
   return (
     <>
-      <NavBar></NavBar>
+      <NavBar cart={cart}></NavBar>
       <Banner></Banner>
       <Stats></Stats>
       <Tabs activeTab={activeTab} setActiveTab={setActiveTab} cart={cart}></Tabs>

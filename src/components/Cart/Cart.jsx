@@ -1,8 +1,14 @@
+import { toast } from "react-toastify";
 import EmptyText from "../EmptyText/EmptyText";
 import CartCard from "./CartCard/CartCard";
 
 const Cart = ({ cart, setCart }) => {
   const total = cart.reduce((p, c) => (p += c.price), 0).toFixed(2);
+
+  const handleCheckOut = () => {
+    setCart([])
+    toast.success("Payment successful")
+  }
   return (
     <>
       {cart.length > 0 ? (
@@ -25,7 +31,7 @@ const Cart = ({ cart, setCart }) => {
             <p className="text-xl font-semibold">${total}</p>
           </div>
           <button
-            onClick={() => setCart([])}
+            onClick={handleCheckOut}
             className="btn w-full rounded-full linear-gr-bg font-bold mt-3 text-white"
           >
             Proceed To Checkout

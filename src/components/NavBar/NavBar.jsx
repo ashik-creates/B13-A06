@@ -1,8 +1,8 @@
 import cartImg from "../../assets/products/shopping-cart.png";
 
-const NavBar = () => {
+const NavBar = ({ cart }) => {
   return (
-    <div className="shadow-sm">
+    <div className="shadow-sm sticky top-0 z-10 bg-white">
       <div className="navbar max-[400px]:gap-8 justify-between bg-base-100 w-full sm:w-11/12 mx-auto max-[400px]:flex-col">
         <div className="flex items-center gap-2">
           <div className="dropdown">
@@ -48,8 +48,11 @@ const NavBar = () => {
             <h1 className="text-2xl sm:text-3xl linear-gr-bg-logo font-bold text-transparent">
               DigiTools
             </h1>
-            <div className="w-5 hidden max-[400px]:flex">
+            <div className="relative w-5 hidden max-[400px]:flex">
               <img src={cartImg} alt="cart logo" className="w-full" />
+              {cart.length > 0 && <div className="absolute w-3 h-3 flex justify-center items-center bg-red-500 rounded-[100%] -top-1 left-1">
+                <p className="text-[10px] text-white">{cart.length}</p>
+              </div>}
             </div>
           </div>
         </div>
@@ -73,8 +76,11 @@ const NavBar = () => {
           </ul>
         </div>
         <div className="flex items-center justify-center gap-4">
-          <div className="w-5 max-[400px]:hidden">
+          <div className="relative w-5 max-[400px]:hidden">
             <img src={cartImg} alt="cart logo" className="w-full" />
+            {cart.length > 0 && <div className="absolute w-3 h-3 flex justify-center items-center bg-red-500 rounded-[100%] -top-1 left-1">
+                <p className="text-[10px] text-white">{cart.length}</p>
+              </div>}
           </div>
           <p className="text-sm font-medium">Login</p>
 
