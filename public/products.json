@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "name": "AI Content Writer",
+    "description": "Generate high-quality blog posts and marketing copy in seconds using advanced neural networks.",
+    "price": 19.99,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["SEO Optimization", "50+ Languages", "Plagiarism Checker", "Bulk Generation"],
+    "icon": "https://i.ibb.co.com/nqsMyPMq/3dicons-pencil-dynamic-color.png"
+  },
+  {
+    "id": 2,
+    "name": "Design Asset Pack",
+    "description": "A massive collection of 5,000+ premium 3D icons, illustrations, and abstract backgrounds.",
+    "price": 49.00,
+    "period": "one-time",
+    "tag": "Best Seller",
+    "tagType": "best seller",
+    "features": ["Vector Files (SVG)", "Commercial License", "Monthly Updates", "High Resolution"],
+    "icon": "https://i.ibb.co.com/xSp8zC98/3dicons-painting-kit-dynamic-color.png"
+  },
+  {
+    "id": 3,
+    "name": "TaskMaster Pro",
+    "description": "The ultimate Kanban-style project management tool for high-performance remote teams.",
+    "price": 120.00,
+    "period": "yearly",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["Unlimited Boards", "Time Tracking", "GitHub Integration", "Priority Support"],
+    "icon": "https://i.ibb.co.com/ch8M7Srv/3dicons-broom-dynamic-color.png"
+  },
+  {
+    "id": 4,
+    "name": "Video Editor Cloud",
+    "description": "Edit 4K videos directly in your browser with real-time collaboration features.",
+    "price": 29.99,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["4K Rendering", "Stock Music Library", "AI Green Screen", "Auto-Subtitles"],
+    "icon": "https://i.ibb.co.com/BKVL8yvP/3dicons-video-cam-dynamic-color.png"
+  },
+  {
+    "id": 5,
+    "name": "UI Kit Bundle",
+    "description": "Ready-to-use Figma components for SaaS, E-commerce, and Dashboard applications.",
+    "price": 35.00,
+    "period": "one-time",
+    "tag": "Limited",
+    "tagType": "new",
+    "features": ["Auto-Layout 4.0", "Dark Mode Ready", "100+ Screens", "Free Lifetime Updates"],
+    "icon": "https://i.ibb.co.com/8gyDwStr/3dicons-copy-dynamic-color.png"
+  },
+  {
+    "id": 6,
+    "name": "CodeGuard AI",
+    "description": "Automatically scan your repositories for security vulnerabilities and optimize performance.",
+    "price": 150.00,
+    "period": "yearly",
+    "tag": "Best Seller",
+    "tagType": "best seller",
+    "features": ["Real-time Monitoring", "Automated PR Fixes", "SOC2 Compliance", "Team Reports"],
+    "icon": "https://i.ibb.co.com/C5SJQPtX/3dicons-shield-dynamic-gradient.png"
+  },
+  {
+    "id": 7,
+    "name": "Social Media Scheduler",
+    "description": "Schedule your entire month of social media content across 10+ platforms in one go.",
+    "price": 15.00,
+    "period": "monthly",
+    "tag": "Trending",
+    "tagType": "popular",
+    "features": ["Analytics Dashboard", "AI Hashtag Finder", "Comment Automation", "Image Editor"],
+    "icon": "https://i.ibb.co.com/BHm4dLQY/3dicons-chat-bubble-dynamic-color.png"
+  },
+  {
+    "id": 8,
+    "name": "E-book Template Mega-Kit",
+    "description": "Professional layouts for Canva and InDesign to help you launch your first digital product.",
+    "price": 25.00,
+    "period": "one-time",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["20+ Layout Styles", "Interactive PDFs", "Custom Fonts Included", "Marketing Guide"],
+    "icon": "https://i.ibb.co.com/sv5FDbQC/3dicons-notebook-dynamic-color.png"
+  },
+  {
+    "id": 9,
+    "name": "Cloud Storage Plus",
+    "description": "Secure, encrypted cloud storage for your large design files and video projects.",
+    "price": 9.99,
+    "period": "monthly",
+    "tag": "Value",
+    "tagType": "popular",
+    "features": ["2TB Storage", "End-to-End Encryption", "File Versioning", "Offline Access"],
+    "icon": "https://i.ibb.co.com/rRkKNbkp/3dicons-folder-dynamic-gradient.png"
+  }
+]
