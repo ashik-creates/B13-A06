@@ -10,7 +10,7 @@ const Tabs = ({ activeTab, setActiveTab, cart }) => {
           designed <br /> to boost your productivity and creativity.
         </p>
         <div className="">
-          <div className="tabs tabs-box rounded-full">
+          <div className="tabs tabs-box rounded-full justify-center gap-5">
             <input
               onClick={() => setActiveTab("products")}
               type="radio"

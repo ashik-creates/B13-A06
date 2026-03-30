@@ -27,7 +27,7 @@ function App() {
       {activeTab === "products" && (
         <Products dataPromise={dataPromise} cart={cart} setCart={setCart}></Products>
       )}
-      {activeTab === "cart" && <Cart></Cart>}
+      {activeTab === "cart" && <Cart cart={cart} setCart={setCart}></Cart>}
     </>
   );
 }
