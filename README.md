@@ -1,16 +1,20 @@
-# React + Vite
+Name: Digitools
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Description: It is a digital platform where you can buy all kinds of digital tools to make your life easier. 
+This application is user-friendly which provides help for developers,designers, and professionals.
 
-Currently, two official plugins are available:
+Technologies: This application is built on modern technology for high performance and super-user-friendly UI.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+1. React.js: For user-friendly UI and high performance.
+2. Tailwind CSS: For utility-based styling and modern UI and rapid build time.
+3. Daisy UI: For pre-designed component and easy build.
+4. JavaScript (ES6+): For robust frontend logic and interactivity.
+5. React-Toastify (NPM Package): To show beautiful UI on alert.
+6. React-Icons (NPM Package): For different kind of icons on the app.
+7. JSON: For api data.
 
-## React Compiler
+3 Features about the project:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Premium Tool Collection: This application has a premium collection of digital tools for AI enthusiast , developers and all kind of professionals, all in one platform.
+2. User-friendly UI: This application has user friendly UI to navigate different section and performs action when necessary. The actions is seemingly smooth.
+3. High Performance and Responsive Design: This application is created using modern libraries and utilities for high performance.This application is fast loading and super responsive in all devices.

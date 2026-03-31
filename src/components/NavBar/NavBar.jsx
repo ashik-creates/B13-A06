@@ -52,7 +52,7 @@ const NavBar = ({ cart }) => {
             <div className="relative w-5 hidden max-[400px]:flex">
               <FiShoppingCart className="w-5 h-5"></FiShoppingCart>
               {cart.length > 0 && (
-                <div className="absolute w-3 h-3 flex justify-center items-center bg-red-500 rounded-[100%] -top-1 left-1">
+                <div className="absolute w-3 h-3 flex justify-center items-center bg-red-500 rounded-[100%] -top-1 left-2">
                   <p className="text-[10px] text-white">{cart.length}</p>
                 </div>
               )}
