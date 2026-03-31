@@ -16,7 +16,7 @@ const ProductsCard = ({ product, cart, setCart }) => {
   };
   return (
     <div className="relative">
-      <div className="p-5 shadow-lg rounded-lg border border-gray-300 flex flex-col gap-6 h-full">
+      <div className="p-5 shadow-lg rounded-xl border border-gray-300 flex flex-col gap-6 h-full">
         <div className="w-15 h-15">
           <img
             src={product.icon}
