@@ -1,6 +1,6 @@
 const Tabs = ({ activeTab, setActiveTab, cart }) => {
   return (
-    <div className="w-11/12 mx-auto flex justify-center items-center mt-10 mb-5">
+    <div className="max-w-325 w-11/12 mx-auto flex justify-center items-center mt-10 mb-5">
       <div className="flex flex-col justify-center items-center gap-5">
         <h1 className="text-5xl font-bold text-center">
           Premium Digital Tools

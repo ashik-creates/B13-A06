@@ -12,7 +12,7 @@ const Cart = ({ cart, setCart }) => {
   return (
     <>
       {cart.length > 0 ? (
-        <div className="w-11/12 mx-auto mt-10 shadow-lg border border-gray-200 rounded-lg p-5">
+        <div className="max-w-325 w-11/12 mx-auto mt-10 shadow-lg border border-gray-200 rounded-lg p-5">
           <div>
             <h2 className="text-3xl mb-3     font-bold">Your Cart</h2>
           </div>

@@ -1,7 +1,7 @@
 const Stats = () => {
   return (
     <div className="mt-5 py-10 linear-gr-bg">
-      <div className="w-11/12 mx-auto flex flex-col sm:flex-row justify-around items-center text-white">
+      <div className="max-w-325 w-11/12 mx-auto flex flex-col sm:flex-row justify-around items-center text-white">
         <div className="text-center">
           <h2 className="text-6xl font-extrabold">50K+</h2>
           <p className="text-2xl">Active Users</p>

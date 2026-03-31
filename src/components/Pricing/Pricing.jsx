@@ -50,7 +50,7 @@ const Pricing = () => {
     },
   ];
   return (
-    <div className="my-20 w-11/12 mx-auto">
+    <div className="my-20 max-w-325 w-11/12 mx-auto">
       <div className="text-center">
         <h2 className="text-3xl sm:text-5xl font-bold mb-3">
           Simple, Transparent Pricing

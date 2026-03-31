@@ -5,7 +5,7 @@ import ThStepImg from "../../assets/rocket.png";
 const Steps = () => {
   return (
     <div className="mt-20 bg-gray-200 py-24">
-      <div className="w-11/12 mx-auto space-y-10">
+      <div className="max-w-325 w-11/12 mx-auto space-y-10">
         <div className="text-center">
           <h1 className="text-3xl sm:text-5xl font-bold mb-5">Get Started in 3 Steps</h1>
           <p className="text-gray-500">Start using premium digital tools in minutes, not hours.</p>

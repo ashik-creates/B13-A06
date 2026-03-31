@@ -3,7 +3,7 @@ import cartImg from "../../assets/products/shopping-cart.png";
 const NavBar = ({ cart }) => {
   return (
     <div className="shadow-sm sticky top-0 z-10 bg-white">
-      <div className="navbar max-[400px]:gap-8 justify-between bg-base-100 w-full sm:w-11/12 mx-auto max-[400px]:flex-col">
+      <div className="navbar max-w-325 max-[400px]:gap-8 justify-between bg-base-100 w-full sm:w-11/12 mx-auto max-[400px]:flex-col">
         <div className="flex items-center gap-2">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
