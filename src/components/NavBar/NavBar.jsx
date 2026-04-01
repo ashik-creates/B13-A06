@@ -4,7 +4,7 @@ import { FiShoppingCart } from "react-icons/fi";
 const NavBar = ({ cart }) => {
   return (
     <div className="shadow-sm sm:sticky top-0 z-10 bg-white">
-      <div className="navbar max-w-325 max-[400px]:gap-8 justify-between bg-base-100 w-full sm:w-11/12 mx-auto max-[400px]:flex-col">
+      <div className="navbar max-w-325 max-[450px]:gap-8 justify-between bg-base-100 w-full sm:w-11/12 mx-auto max-[450px]:flex-col">
         <div className="flex items-center gap-2">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -49,7 +49,7 @@ const NavBar = ({ cart }) => {
             <h1 className="text-2xl sm:text-3xl linear-gr-bg-logo font-bold text-transparent">
               DigiTools
             </h1>
-            <div className="relative w-5 hidden max-[400px]:flex">
+            <div className="relative w-5 hidden max-[450px]:flex">
               <FiShoppingCart className="w-5 h-5"></FiShoppingCart>
               {cart.length > 0 && (
                 <div className="absolute w-3 h-3 flex justify-center items-center bg-red-500 rounded-[100%] -top-1 left-2">
@@ -79,7 +79,7 @@ const NavBar = ({ cart }) => {
           </ul>
         </div>
         <div className="flex items-center justify-center gap-5">
-          <div className="relative w-5 max-[400px]:hidden">
+          <div className="relative w-5 max-[450px]:hidden">
             <FiShoppingCart className="w-5 h-5"></FiShoppingCart>
 
             {cart.length > 0 && (
